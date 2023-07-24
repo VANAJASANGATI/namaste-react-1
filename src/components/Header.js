@@ -14,7 +14,7 @@ const Header=()=>{
             </div>
             <div>
                 <ul className="nav-links">
-                    <li className="nav-item"><Link to="/home">Home</Link></li>
+                    <li className="nav-item"><Link to="/">Home</Link></li>
                     <li className="nav-item"><Link to="/about">About Us</Link></li>
                     <li className="nav-item"><Link to="/contact">Contact Us</Link></li>
                     <li className="nav-item"><Link to="/cart">Cart</Link></li>

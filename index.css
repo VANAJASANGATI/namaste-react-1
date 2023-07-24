@@ -29,7 +29,7 @@
 .body-container{
     margin: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     
 }
 .rest-card{

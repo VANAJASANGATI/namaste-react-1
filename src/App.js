@@ -24,11 +24,11 @@ const App=()=>{
 
 const appRouter=createBrowserRouter([{path:"/",element:<App/>,
 children:[{path:"/",element:<Body/>},
-{path:"/home",element: <Home/>,},
+// {path:"/home",element: <Body/>,},
 {path:"/about",element: <About/>,},
 {path:"/contact",element: <Contact/>,},
 {path:"/cart",element: <Cart/>,},
-{path:"/restaurents/:resId",element: <RestroMenu/>,}],
+{path:"/restaurants/:resId",element: <RestroMenu/>,}],
 errorElement:<Error/>},])
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

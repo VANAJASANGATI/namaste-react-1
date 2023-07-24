@@ -2,6 +2,7 @@ import Restcard from "./Restcard"
 import restList  from "../utils/mockData";
 import Shimmer from "./Shimmer"
 import { useState,useEffect} from "react";
+import {Link} from "react-router-dom"
 
 const Body=()=>{
     let [listOfRestaurents, setListOfRestaurents] = useState([]);
@@ -50,7 +51,7 @@ const Body=()=>{
                 }}> searchRestaurentsOnRating</button> */}
               
               <div><div className="rest-container">
-                   {searchedData.map(restaurant =><Restcard key={restaurant.data.id}  restData={restaurant}/>) }
+                   {searchedData.map(restaurant =><Link to={"/restaurants/" + restaurant.data.id} ><Restcard key={restaurant.data.id}  restData={restaurant}/></Link>) }
               
               </div>
               </div>
